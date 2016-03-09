@@ -1,0 +1,7 @@
+
+
+print "Calling Program('hello.c')"
+Program('hello.c')
+print "Calling Program('goodbye.c')"
+Program('goodbye.c')
+print "Finished calling Program()"

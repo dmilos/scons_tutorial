@@ -1,0 +1,21 @@
+env = Environment()
+
+dict = env.Dictionary()
+
+print '------------------------'
+print "CC is:", env.subst('$CC')
+print '------------------------'
+print "expand(CCCOM) is:", env.subst('$CCCOM')
+print '------------------------'
+print "original(CCCOM) is:", env['CCCOM']
+print '------------------------'
+        
+for key in ['OBJSUFFIX', 'LIBSUFFIX', 'PROGSUFFIX']:
+    print "key = %s, value = %s" % (key, dict[key])
+
+print '------------------------'
+keys = dict.keys()
+keys.sort()
+for key in keys:
+    print "construction variable = '%s', value = '%s'" % (key, dict[key])
+    

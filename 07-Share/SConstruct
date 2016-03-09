@@ -1,0 +1,5 @@
+common = ['common1.c', 'common2.c']
+foo_files = ['foo.c'] + common
+bar_files = ['bar.c'] + common
+Program('foo', foo_files)
+Program('bar', bar_files)

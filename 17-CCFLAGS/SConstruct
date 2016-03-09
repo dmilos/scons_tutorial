@@ -1,0 +1,1 @@
+obj = Object('hello.c', CCFLAGS='-MD')

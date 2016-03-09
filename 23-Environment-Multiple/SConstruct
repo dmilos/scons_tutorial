@@ -1,0 +1,8 @@
+opt = Environment()
+dbg = Environment()
+
+o = opt.Object('hello-opt', 'hello.c')
+opt.Program(o)
+
+d = dbg.Object('hello-dbg', 'hello.c')
+dbg.Program(d)

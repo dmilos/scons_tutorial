@@ -1,0 +1,7 @@
+object_list = Object( ['hello.c', 'goodbye.c'])
+program_list = Program(object_list)
+
+print '------------'
+print "The object file is:", object_list
+print "The program file is:", program_list
+print '------------'

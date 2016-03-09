@@ -1,0 +1,3 @@
+hello = Program('hello.c')
+Ignore(hello, 'hello.h')
+Decider('MD5')

@@ -1,0 +1,4 @@
+# Entry('xyzzy') - sam detektuje jel File or Dir
+
+hello_c = File('hello.c')
+Program(hello_c)

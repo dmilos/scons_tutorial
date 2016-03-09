@@ -1,0 +1,6 @@
+#Nece da radi:  version = Object('version.c')
+#Nece da radi:  AlwaysBuild(version)
+
+hello = Program( 'asdasda', ['hello.c', 'version.c' ] )
+
+AlwaysBuild(hello)

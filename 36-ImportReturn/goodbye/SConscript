@@ -1,0 +1,4 @@
+
+Import('env')
+obj = env.Object('goodbye.c')
+Return('obj')

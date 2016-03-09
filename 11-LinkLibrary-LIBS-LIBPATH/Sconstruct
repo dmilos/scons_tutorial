@@ -1,0 +1,2 @@
+Library('foo', ['f1.c', 'f2.c', 'f3.c'])
+Program('prog.c', LIBS=['foo'], LIBPATH=['.'])

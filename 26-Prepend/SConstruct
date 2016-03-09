@@ -1,0 +1,4 @@
+env = Environment(CCFLAGS = ['-DMY_VALUE'])
+env.Prepend(CCFLAGS = ['-DFIRST']) # Insert flag on First place
+env.Prepend(CCFLAGS = ['-DBEFORE_FIRST']) # Insert flag on First place
+env.Program('hello.c')

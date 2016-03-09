@@ -1,0 +1,6 @@
+# Call >> scons -Q
+
+env = Environment()
+hello = env.Program('hello.c')
+env.Program('goodbye.c')
+Default(hello)

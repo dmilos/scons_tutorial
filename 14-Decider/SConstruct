@@ -1,0 +1,5 @@
+Program('hello.c')
+Decider('MD5')
+## Decider('timestamp-newer') <=> Decider('make')
+## Decider('MD5') <> Decider('content')
+#Decider('MD5-timestamp')

@@ -1,0 +1,12 @@
+import time
+
+version_c_text = """
+char *date = "%s";
+""" % time.ctime(time.time())
+open('version.c', 'w').write(version_c_text)
+
+version_obj = Object('version.c')
+
+# hello = Program('hello.c', LINKFLAGS = str( version_obj[0] ) )
+hello = Program('hello.c', OBJS = [version_obj] )
+Requires(hello, version_obj)

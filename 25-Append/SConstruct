@@ -1,0 +1,4 @@
+
+env = Environment(CCFLAGS = ['-DMY_VALUE'])
+env.Append(CCFLAGS = ['-DLAST'])
+env.Program('foo.c')

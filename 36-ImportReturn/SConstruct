@@ -1,0 +1,8 @@
+env = Environment()
+
+Export('env')
+          
+goodbye_obj = SConscript('./goodbye/SConscript')
+
+env.Object('hello.c')
+env.Program('hello', goodbye_obj )

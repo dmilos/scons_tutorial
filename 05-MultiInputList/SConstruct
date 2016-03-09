@@ -1,0 +1,1 @@
+Program('program', ['prog.c', 'file1.c', 'file2.c'])

@@ -1,0 +1,6 @@
+
+Program( 'main', 'main.c')
+
+SConscript([ './hello/SConscript',
+             './goodbye/SConscript',
+            ])

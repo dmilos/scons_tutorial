@@ -1,0 +1,10 @@
+env = Environment()
+env.Program('goodbye',['goodbye.c'])
+
+Export( 'env' )
+SConscript( './hello/SConstruct' )
+
+
+#SConscript('hello/SConscript', 'env')
+#SConscript('hello/SConscript', exports='env')
+#SConscript(['hello/SConscript','src2/SConscript'], exports='env')
