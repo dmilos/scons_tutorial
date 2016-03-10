@@ -1,1 +1,5 @@
-Program('program', Glob('*.c'))
+
+#make executable by using file pattern match.
+#Glob will assemble all files from some directory int one list
+
+Program('program', Glob('./*.c'))

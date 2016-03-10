@@ -1,11 +1,14 @@
 env = Environment()
-env.Append(CCFLAGS = '-DTest1 -DTest2 -DTest3')
+
+env.Append( CCFLAGS = '-DTest1 -DTest2 -DTest3')
+
 flags = { 'CCFLAGS' : '-DAppend1 -DAppend2' }
+
 env.MergeFlags( flags )
 
-env.Append(CPPPATH = ['/include', '/usr/local/include', '/usr/include'])
+env.Append( CPPPATH = ['/include', '/usr/local/include', '/usr/include'])
 flags = { 'CPPPATH' : ['/usr/opt/include', '/usr/local/include'] }
 env.MergeFlags(flags)
-    
+
 print env['CCFLAGS']
 env.Program('hello', ['hello.c'])

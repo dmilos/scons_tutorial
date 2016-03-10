@@ -1,1 +1,4 @@
+
+#make executable that has different name than input file
+
 Program('new_hello', 'hello.c')

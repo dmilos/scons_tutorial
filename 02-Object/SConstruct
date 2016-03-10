@@ -1,1 +1,4 @@
+
+#make object file named hello from source file hello.c
+
 Object('hello.c')

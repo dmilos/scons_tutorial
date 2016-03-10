@@ -1,1 +1,4 @@
+
+#make executable named hello from file hello.c
+
 Program('hello.c')

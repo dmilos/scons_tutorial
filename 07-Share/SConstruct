@@ -1,3 +1,6 @@
+
+#make two programs who share two files
+
 common = ['common1.c', 'common2.c']
 foo_files = ['foo.c'] + common
 bar_files = ['bar.c'] + common

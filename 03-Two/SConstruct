@@ -1,7 +1,8 @@
 
+#make two executables.
+#one named hello
+#second named goodbye
 
-print "Calling Program('hello.c')"
 Program('hello.c')
-print "Calling Program('goodbye.c')"
+
 Program('goodbye.c')
-print "Finished calling Program()"
