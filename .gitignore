@@ -140,3 +140,7 @@
 36-ImportReturn/goodbye/goodbye.o
 36-ImportReturn/hello
 36-ImportReturn/hello.o
+01-Program/hello.exe
+01-Program/hello.obj
+
+/*.bak

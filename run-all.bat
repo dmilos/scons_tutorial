@@ -1,111 +1,111 @@
 
 cd 01-Program
-scons
+%prg_scons%
 cd ..
 cd 02-Object
-scons
+%prg_scons%
 cd ..
 cd 03-Two
-scons
+%prg_scons%
 cd ..
 cd 04-DiffOut
-scons
+%prg_scons%
 cd ..
 cd 05-MultiInputList
-scons
+%prg_scons%
 cd ..
 cd 06-MultiInputGlob
-scons
+%prg_scons%
 cd ..
 cd 07-Share
-scons
+%prg_scons%
 cd ..
 cd 08-Library
-scons
+%prg_scons%
 cd ..
 cd 09-SharedLibrary
-scons
+%prg_scons%
 cd ..
 cd 10-CombineDifferent
-scons
+%prg_scons%
 cd ..
 cd 11-LinkLibrary-LIBS-LIBPATH
-scons
+%prg_scons%
 cd ..
 cd 12-ExpliciteNodes
-scons
+%prg_scons%
 cd ..
 cd 13-Print
-scons
+%prg_scons%
 cd ..
 cd 14-Decider
-scons
+%prg_scons%
 cd ..
 cd 15-CPPPATH
-scons
+%prg_scons%
 cd ..
 cd 16-Depends
-scons
+%prg_scons%
 cd ..
 cd 17-CCFLAGS
-scons
+%prg_scons%
 cd ..
 cd 19-Ignore
-scons
+%prg_scons%
 cd ..
 cd 20-Requires
-scons
+%prg_scons%
 cd ..
 cd 21-AlwaysBuild
-scons
+%prg_scons%
 cd ..
 cd 22-Environment-Print
-scons
+%prg_scons%
 cd ..
 cd 23-Environment-Multiple
-scons
+%prg_scons%
 cd ..
 cd 24-Replace
-scons
+%prg_scons%
 cd ..
 cd 25-Append
-scons
+%prg_scons%
 cd ..
 cd 26-Prepend
-scons
+%prg_scons%
 cd ..
 cd 27-MergeFlags
-scons
+%prg_scons%
 cd ..
 cd 28-Progress
-scons
+%prg_scons%
 cd ..
 cd 29-COMMAND_LINE_TARGETS
-scons
+%prg_scons%
 cd ..
 cd 29-Default
-scons
+%prg_scons%
 cd ..
 cd 30-BUILD_TARGETS
-scons
+%prg_scons%
 cd ..
 cd 31-Install
-scons
+%prg_scons%
 cd ..
 cd 32-InstallMultiple
-scons
+%prg_scons%
 cd ..
 cd 33-TODO-Clean
-scons
+%prg_scons%
 cd ..
 cd 34-SConscript
-scons
+%prg_scons%
 cd ..
 cd 35-ExportImport
-scons
+%prg_scons%
 cd ..
-scons
+%prg_scons%
 cd ..
 cd 36-ImportReturn
-scons
+%prg_scons%
 cd ..
