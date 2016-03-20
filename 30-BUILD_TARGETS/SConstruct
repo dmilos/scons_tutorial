@@ -1,5 +1,8 @@
+#!/usr/bin/python
+
 prog1 = Program('hello.c')
 Program('goodbye.c')
 Default(prog1)
+print "---------------"
 print "BUILD_TARGETS is", map(str, BUILD_TARGETS)
-      
+print "---------------"

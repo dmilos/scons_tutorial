@@ -1,0 +1,9 @@
+env = Environment( TARGET_ARCH="x86", MSVC_VERSION="12.0" );
+env.Append( CCPDBFLAGS = '/Zi' )
+env.Append( CCPDBFLAGS = '/Fd"${TARGET}.pdb"' )
+
+prg = env.Program( 'prvi', ['hello.c', 'bye.cpp'] )
+
+env.Clean( prg, ['bye.obj.pdb', 'hello.obj.pdb']) 
+
+

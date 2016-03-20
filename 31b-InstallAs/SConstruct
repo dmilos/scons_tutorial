@@ -1,0 +1,8 @@
+
+env = Environment()
+hello = env.Program('hello.c')
+goodbye = env.Program('goodbye.c')
+env.InstallAs(['./bin/hello-new.exe',
+               './bin/goodbye-new.exe'],
+              [hello, goodbye])
+env.Alias('install', './bin')

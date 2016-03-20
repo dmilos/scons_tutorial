@@ -1,0 +1,4 @@
+Import('env')
+goodbye_obj = env.Object( 'goodbye.c' )
+hello_obj   = env.Object( 'hello.c' )
+Return( hello_obj, goodbye_obj )

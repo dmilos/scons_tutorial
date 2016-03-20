@@ -1,3 +1,4 @@
 hello_list = Object('hello.c', CCFLAGS='-DHELLO')
 goodbye_list = Object('goodbye.c', CCFLAGS='-DGOODBYE')
-Program(hello_list + goodbye_list)
+Program('hello', OBJ =  hello_list + goodbye_list )
+# Program('hello', OBJ =  [ hello_list + goodbye_list ] )

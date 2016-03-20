@@ -1,0 +1,2 @@
+Object('hello.c')
+StaticObject('goodbye.c')

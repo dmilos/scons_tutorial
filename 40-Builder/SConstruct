@@ -1,0 +1,11 @@
+
+env = Environment()
+
+gw_path =  "\"C:\\Program Files (x86)\\Graphviz\\bin\\dot.exe\""
+
+gw_builder = Builder( action = gw_path + ' -Tpng $SOURCE > $TARGET' )
+
+env.Append( BUILDERS = {'graphWizBuild' : gw_builder } )
+
+env.graphWizBuild( source = 'KioskWF.dot', target = 'KioskWF.png' )
+

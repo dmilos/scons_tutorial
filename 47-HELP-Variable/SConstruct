@@ -1,0 +1,7 @@
+#scons RELEASE=12312
+
+vars = Variables( )
+vars.Add( 'RELEASE', 'Some tralala text about this cmd value', 0)
+
+env = Environment( variables = vars )
+Help( vars.GenerateHelpText(env) )

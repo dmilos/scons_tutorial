@@ -1,0 +1,11 @@
+env = Environment()
+env.Append( CPPFLAGS='/DXXX' )
+Export('env', )
+
+sc_list  = [ './goodbye/SConscript' ]
+sc_list += [ './ehey/SConscript'    ]
+
+goodbye_obj = SConscript( sc_list )
+goodbye_obj += env.Object('hello.c')
+
+env.Program('hello', goodbye_obj )

@@ -1,0 +1,3 @@
+
+obj1 = Object('hello1.c', CPPDEFINES={ 'aaa': 'dd', 'fff':'' } )
+obj2 = Object('hello2.c', CPPDEFINES=[('B', 2), 'A'] )

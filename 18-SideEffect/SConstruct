@@ -1,0 +1,10 @@
+#URL: http://www.scons.org/wiki/SConsMethods/SideEffect
+
+hello_list = Object('hello.c', CCFLAGS='/DHELLO /Fa"hello" ')
+hello_program = Program('hello', hello_list )
+
+goodbye_list = Object('goodbye.c', CCFLAGS='/DHELLO /Fa"goodbye" ')
+goodbye_program= Program('goodbye', goodbye_list )
+
+SideEffect( ['hello.asm'], hello_program )
+SideEffect( ['goodbye.asm'], goodbye_program )

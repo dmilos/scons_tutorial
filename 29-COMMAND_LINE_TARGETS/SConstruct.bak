@@ -1,9 +1,9 @@
-#start  as >> scons 'sdfs' 'sddddddd'  'bar'
+#tsat as >> scons 'sdfs' 'sddddddd'  'bar'
 
 
 print COMMAND_LINE_TARGETS
 
-if 'bar' not in COMMAND_LINE_TARGETS:
+if 'bar' in COMMAND_LINE_TARGETS:
     print "Don't forget to copy `bar' to the archive!"
     
 Program('hello.c')

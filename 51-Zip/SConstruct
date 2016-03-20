@@ -1,0 +1,16 @@
+#> scons -Q VERBOSE=1
+#this works as Install
+env = Environment()
+
+zip1_list = []
+zip1_list +=[ './file2.in', './file1.in' ]
+zip1_list +=[ './test1/file2.in', './test1/file1.in' ]
+
+env.Zip( target ='foo1.zip', source = zip1_list )
+
+
+zip2_list = []
+zip2_list +=[ './file2.in' ]
+zip2_list +=[ './test1/file2.in' ]
+
+env.Zip( target ='foo2.zip', source = zip2_list )

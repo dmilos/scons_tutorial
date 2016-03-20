@@ -1,0 +1,4 @@
+
+Import('env')
+obj = env.Object('ehey.c')
+Return('obj')

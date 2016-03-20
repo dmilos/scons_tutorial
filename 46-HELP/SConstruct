@@ -1,0 +1,4 @@
+Help("Example: scons -h\n")
+Help("Call this script with '-h'\n")
+
+Help("Tra la la la la\n")

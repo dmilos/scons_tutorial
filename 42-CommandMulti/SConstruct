@@ -1,0 +1,32 @@
+# URL: http://www.scons.org/doc/2.3.4/HTML/scons-man.html
+# TARGET
+#    The file name of the target being built, or the file name of the FIRST target if multiple targets are being built.
+# TARGETS
+#    The file names of all targets being built.
+# SOURCE
+#    The file name of the source of the build command, or the file name of the FIRST source if multiple sources are being built.
+# SOURCES
+#    The file names of the sources of the build command.
+
+env = Environment()
+
+gw_path = "\"C:\\Program Files (x86)\\Graphviz\\bin\\dot.exe\""
+
+input_list = []
+input_list += [ 'KioskWF1.dot' ]
+input_list += [ 'KioskWF2.dot' ]
+
+output_list = []
+output_list += [ 'KioskWF1.png'    ]
+output_list += [ 'KioskWF2.png'   ]
+output_list += [ 'FolderList.txt' ]
+
+# Will be executed in ORDER
+
+action_list = []
+action_list += [ gw_path + " -Tpng < ${SOURCES[0]} > ${TARGETS[0]}" ]
+action_list += [ gw_path + " -Tpng < ${SOURCES[1]} > ${TARGETS[1]}" ]
+action_list += [ " dir > ${TARGETS[2]}" ]
+
+env.Command( output_list, input_list, action_list )
+

@@ -1,0 +1,27 @@
+digraph G 
+ {
+  rankdir=LR;
+
+  Install[ label="Install", style=filled, color="#ff7f7f"];
+  Kiosk  [ label="Kiosk",   style=filled, color="#7fff7f"];
+  Desktop[ label="Desktop", style=filled, color="#7f7fff"];
+   
+  subgraph cluster_client
+   {
+    label = "Install";
+    Install;
+   }
+  
+  
+  Install -> Kiosk  [ label="true" ];
+  Install -> Desktop[ label="false" ];
+  Desktop -> Kiosk  [ label="true" ];
+  Kiosk -> Desktop  [ label="false" ];
+
+  subgraph cluster_clientX
+   {
+    label = "Work";
+    Desktop;
+    Kiosk;
+   } 
+}

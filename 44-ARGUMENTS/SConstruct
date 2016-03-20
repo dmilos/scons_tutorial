@@ -1,0 +1,12 @@
+#invoke this buld with scons -Q debug=0
+
+#url: http://www.scons.org/doc/1.1.0/HTML/scons-user/x2361.html
+
+env = Environment()
+debug = ARGUMENTS.get( 'debug', 0 )
+
+print 'Debug is ' + debug
+
+if int( debug ) ==0 :
+    print 'debug is 0 take some action'
+env.Program('hello.c')

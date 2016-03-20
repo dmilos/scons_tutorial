@@ -1,0 +1,18 @@
+
+import os
+
+env = Environment()
+gw_path = "\"C:\\Program Files (x86)\\Graphviz\\bin\\dot.exe\""
+
+# ${SOURCE.filebase}
+# ${SOURCE.dir} 
+# ${SOURCE.suffix}
+# ${SOURCE.file}
+# ${SOURCE.abspath}
+# SOURCE je tipa File
+
+env.Command( 'KioskWF.png', 'KioskWF.dot', gw_path + " -Tpng < $SOURCE.abspath > $TARGET" ) 
+
+
+
+

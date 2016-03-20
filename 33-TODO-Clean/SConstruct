@@ -1,2 +1,0 @@
-t = Command('foo.out', 'foo.in', 'build -o $TARGET $SOURCE')
-#Clean(t, 'foo.log')

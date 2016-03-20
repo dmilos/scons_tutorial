@@ -1,0 +1,6 @@
+env = Environment()
+
+obj1, obj2 = SConscript( './two/SConscript', exports=['env'] )
+
+
+#env.Program( 'hello',  OBJS = [ obj1 , obj2 ] )

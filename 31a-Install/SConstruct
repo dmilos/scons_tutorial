@@ -4,3 +4,4 @@ goodbye = env.Program('goodbye.c')
 env.Install('./bin', hello)
 env.Install('./bin', goodbye)
 #env.Alias('install', './bin')
+

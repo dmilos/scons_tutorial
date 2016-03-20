@@ -1,0 +1,10 @@
+
+env = Environment()
+
+gw_path = "\"C:\\Program Files (x86)\\Graphviz\\bin\\dot.exe\""
+
+my_input = 'KioskWF.dot'
+my_out = 'KioskWF.png'
+
+env.Command( my_out, my_input, gw_path + " -Tpng < $SOURCE > $TARGET")
+

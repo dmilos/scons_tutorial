@@ -1,0 +1,19 @@
+#!/usr/bin/python
+#URL http://www.scons.org/doc/2.0.1/HTML/scons-user/c4322.html
+
+# Choose target to build skipping the others
+# Example 1. scons.bat install-bin
+# Example 2. scons.bat install-lib
+# Example 3. scons.bat install
+# Example 3. scons.bat
+
+env = Environment()
+p = env.Program('hello.c')
+l = env.Library('goodbye.c') # equivalent to StaticLibrary
+env.Install('./bin', p)
+env.Install('./lib', l)
+
+ib = env.Alias( 'install-bin', './bin' )
+il = env.Alias( 'install-lib', './lib' )
+env.Alias( 'install', [ib, il] )
+  
