@@ -1,1 +1,1 @@
-Program('hello.c', CPPPATH = '.')
+Program( 'hello.c', CPPPATH = './inc' )

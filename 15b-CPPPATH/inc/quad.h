@@ -1,0 +1,1 @@
+#define QUAD(x) (x)*(x)
