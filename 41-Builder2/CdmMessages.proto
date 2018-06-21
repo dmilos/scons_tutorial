@@ -1,0 +1,40 @@
+package CdmVC;
+
+enum CdmMessageType
+{
+    eAdded       = 0;
+    eChanged     = 1;
+    eRemoved     = 2;
+    eList        = 3;
+    eRequestList = 4;
+}
+
+enum DeviceType
+{
+    eRecordable = 1;
+    ePlayable   = 2;
+    eCapturable = 4;
+}
+
+message Device
+{
+    optional string name     = 1;
+    optional string id       = 2;
+    optional DeviceType type = 3;
+}
+
+message CompositeDevice
+{
+    optional string name       = 1;
+    optional string id         = 2;
+    optional string vendorId   = 3;
+    optional string productId  = 4;
+    optional string hardwareId = 5;
+    repeated Device devices    = 6;
+}
+
+message CdmMessage
+{
+    required CdmMessageType type     = 1;
+    repeated CompositeDevice devices = 2;
+}

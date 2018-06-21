@@ -1,0 +1,21 @@
+env = Environment()
+
+def my_emitter( env, target, source ):
+    # data = str(source[0])
+    # target = []
+    # source[0].split( '.', 1)
+    #print  'source' +  str( source[0] )
+    name = 'asdas'
+    target.append( File( name + '.pb.h'  ) )
+    target.append( File( name + '.pb.cc' ) )
+    #print  'target: -|' + str( target[0] ) +'|-'
+    #print  'target' + target[1]
+    return ( target, source )
+  
+env = Environment()
+
+proto_c = Builder( action = 'protoc-2.6.1.exe -I=. --cpp_out=. $SOURCE', emitter  = my_emitter, src_suffix = '.proto' )
+env.Append( BUILDERS = {'ProtoC' : proto_c } )
+env.ProtoC( source = 'CdmMessages' )
+
+#env.Command( ['CdmMessages.pb.h','CdmMessages.pb.cc'], 'CdmMessages.proto', 'protoc -I=. --cpp_out=. CdmMessages.proto', chdir = 1 )
