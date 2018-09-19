@@ -1,0 +1,9 @@
+
+env = Environment();
+
+Export( 'env' )
+
+first = SConscript( './first/SConscript'  )
+second = SConscript( './second/SConscript' )
+
+SConscript( './SConscript', exports=['first','second'] )

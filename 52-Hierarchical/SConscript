@@ -1,0 +1,7 @@
+Import( 'env' )
+Import( 'first' )
+Import( 'second' )
+
+env.Program( 'main', ['main.c', first, second ] )
+
+

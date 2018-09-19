@@ -1,0 +1,4 @@
+Import( 'env' )
+
+first_lib = env.Library( 'foo', ['f3.c'] )
+Return( 'first_lib' )
