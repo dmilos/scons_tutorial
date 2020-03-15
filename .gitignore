@@ -144,5 +144,7 @@
 01-Program/hello.obj
 
 /*.bak
-/08-Library/*.obj
-/08-Library/*.lib
+*.obj
+*.lib
+*.exe
+.sconsign.dblite

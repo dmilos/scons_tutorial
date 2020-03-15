@@ -1,3 +1,4 @@
+#!/bin/bash
 
 cd 01-Program
 scons
